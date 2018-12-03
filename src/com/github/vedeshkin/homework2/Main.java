@@ -11,6 +11,7 @@ public class Main {
 
         MyStack<Integer> stack = new MyStack<>();
         MyQueue<Integer> queue = new MyQueue<>();
+        MyDeque<Integer> deque = new MyDeque<>();
         stack.push(0);
         stack.push(1);
         stack.push(2);
@@ -29,15 +30,18 @@ public class Main {
 
         System.out.println(queue.peek());
         System.out.println(queue.peek());
-        System.out.println(queue.peek());
-        System.out.println(queue.peek());
+
         queue.delete();
-        System.out.println(queue.peek());
-        System.out.println(queue.peek());
-        System.out.println(queue.peek());
-        System.out.println(queue.peek());
+
         System.out.println(queue);
 
+        deque.insertLeft(1);
+        deque.insertLeft(2);
+        deque.insertLeft(3);
+        deque.insertRight(4);
+        deque.insertRight(5);
+        deque.insertRight(6);
+        System.out.println(deque);
 
 
     }

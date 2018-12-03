@@ -37,14 +37,9 @@ public class MyStack <T> {
     }
 
     public void push(T element) {
-        if(!this.isFull()) {
-            ++top;
-            stack[top] = element;
-        }
-        else {
-            resizeStack();
-            stack[++top] = element;
-        }
+        if(this.isFull()) resizeStack();
+        stack[++top] = element;
+
     }
     public T peek() {
         return stack[top];
@@ -61,7 +56,7 @@ public class MyStack <T> {
         StringBuilder sb = new StringBuilder();
         int i = top;
          while(0 < i){
-             sb.append(stack[i]);
+             sb.append(stack[i]).append(" ");
              i--;
          }
         return  sb.toString();

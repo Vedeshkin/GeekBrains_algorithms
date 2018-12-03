@@ -59,10 +59,11 @@ public class MyStack <T> {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (T t : stack){
-            sb.append(t);
-            sb.append("\n");
-        }
+        int i = top;
+         while(0 < i){
+             sb.append(stack[i]);
+             i--;
+         }
         return  sb.toString();
     }
 }

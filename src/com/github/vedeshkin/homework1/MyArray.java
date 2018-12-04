@@ -1,4 +1,4 @@
-package com.github.vedeshkin.tasks;
+package com.github.vedeshkin.homework1;
 
 import java.util.Random;
 

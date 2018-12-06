@@ -24,6 +24,11 @@ public class MyListBasedStack<Item> {
         return (Item)list.getFirst();
     }
 
+    public boolean isEmpty(){
+        return list.isEmpty();
+    }
+
+    public int size(){return list.size();}
     @Override
     public String toString() {
        return list.toString();
